@@ -52,3 +52,10 @@ input{
     text-decoration: none;
     color:white;
 }
+.page {
+    background: rgba(0, 0, 0, 0.3); /* transparent black */
+    backdrop-filter: blur(8px);
+    text-align:center;
+    margin-right:50px;
+    margin-top:40px;
+}
