@@ -48,7 +48,7 @@
 }
 .nav
 {
-    width:50%;
+    width:60%;
     /* background-color:blue; */
     height:70px;
 }
@@ -112,6 +112,11 @@
     border:1px solid black;
     cursor:pointer;
     border-radius:5px;
+}
+.btn a
+{
+    text-decoration: none;
+    color:white;
 }
 .booking
 {
