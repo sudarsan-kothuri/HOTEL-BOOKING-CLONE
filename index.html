@@ -21,10 +21,9 @@
             <nav class="nav">
                 <ul class="nav-links">
                     <li class="nav-link">Home</li>
-                    <li class="nav-link">Rooms</li>
-                    <li class="nav-link">Premium</li>
-                    <li class="nav-link">Gallery</li>
-                    <li class="nav-link">About</li>
+                    <li class="nav-link" onclick="scrollToSection('rooms')" >Rooms</li>
+                    <li class="nav-link"onclick="scrollToSection('premium')">Premium</li>
+                    <li class="nav-link"onclick="scrollToSection('footer')">About</li>
                     <button class="btn" type="submit">
                         <a href="index1.html">Sign up</a>
                     </button>
@@ -43,7 +42,7 @@
                 Explore the world with us, one destination at a time.
             </h1>
 
-            <button class="btn" data-aos="fade-up" data-aos-duration="1000">Explore Now</button>
+            <button class="btn" data-aos="fade-up" data-aos-duration="1000" onclick="goToRooms()">Explore Now</button>
 
             <div class="booking" data-aos="fade-up" data-aos-duration="1000">
                 
@@ -68,7 +67,7 @@
                 </div>
 
                 <div class="inp">
-                    <button class="btn">
+                    <button class="btn" onclick="calculateBooking()">
                         Book Now
                     </button>
                 </div>
@@ -86,7 +85,7 @@
         <p> The Hospitality and maintainance should be very nice towards our customers. </p>
     </section>
 
-    <section class="rooms">
+    <section class="rooms" id="rooms">
 
         <h1 class="section-title" data-aos="fade-up" data-aos-duration="1000">Our Rooms</h1>
         <p data-aos="fade-up" data-aos-duration="1000">Discover our variety of rooms designed to provide the perfect stay for every traveler.</p>
@@ -99,7 +98,7 @@
                 </div>
                 <div class="room-details">
                     <h2>Deluxe room</h2>
-                    <h3>Price: $40 per night</h3>
+                    <!-- <h3>Price: $40 per night</h3> -->
                     <p>Experience luxury and comfort in our Deluxe room, perfect for a relaxing getaway.</p>
                     <button class="btn">Know more</button>
                 </div>
@@ -111,7 +110,7 @@
                 </div>
                 <div class="room-details">
                     <h2>Couples Room</h2>
-                    <h3>Price: $50 per night</h3>
+                    <!-- <h3>Price: $50 per night</h3> -->
                     <p>Enjoy a romantic stay in our Couples Room, designed for intimacy and comfort.</p>
                     <button class="btn">Know more</button>
                 </div>
@@ -123,7 +122,7 @@
                 </div>
                 <div class="room-details">
                     <h2>Lake side villa</h2>
-                    <h3>Price: $100 per night</h3>
+                    <!-- <h3>Price: $100 per night</h3> -->
                     <p>Experience the beauty of nature in our Lake Side Villa, perfect for a peaceful retreat.</p>
                     <button class="btn">Know more</button>
                 </div>
@@ -135,7 +134,7 @@
                 </div>
                 <div class="room-details">
                     <h2>Resort</h2>
-                    <h3>Price: $300 per Day</h3>
+                    <!-- <h3>Price: $300 per Day</h3> -->
                     <p>Enjoy a luxurious stay in our Resort, featuring world-class amenities and services.</p>
                     <button class="btn">Know more</button>
                 </div>
@@ -147,7 +146,7 @@
                 </div>
                 <div class="room-details">
                     <h2>Co-Hostel</h2>
-                    <h3>Price: $50 per Day</h3>
+                    <!-- <h3>Price: $50 per Day</h3> -->
                     <p>Share a comfortable stay in our Co-Hostel, perfect for budget-conscious travelers.</p>
                     <button class="btn">Know more</button>
                 </div>
@@ -159,7 +158,7 @@
                 </div>
                 <div class="room-details">
                     <h2>Ultra luxury room with pool</h2>
-                    <h3>Price: $150 per Day</h3>
+                    <!-- <h3>Price: $150 per Day</h3> -->
                     <p>Experience ultimate luxury in our Ultra Luxury Room with Pool, featuring premium amenities and services.</p>
                     <button class="btn">Know more</button>
                 </div>
@@ -204,7 +203,7 @@
 
     <!-- premium rooms -->
 
-    <section class="premium" data-aos="fade-up" data-aos-duration="1000">
+    <section class="premium" data-aos="fade-up" data-aos-duration="1000" id="premium">
 
         <h1 class="section-title">Some premium rooms that we provide.</h1>
         <p>
@@ -219,13 +218,13 @@
                 <div class="proom-box" data-aos="fade-up" data-aos-duration="1000">
                     <h1 class="section-title">Premium Lake side room</h1>
                     <p>Experience the beauty of nature in our Premium Lake Side Room, perfect for a peaceful retreat with added luxury.</p>
-                    <h2>$500</h2>
+                    <!-- <h2>$500</h2> -->
                     <button class="btn">Know more</button>
                 </div>
                 <div class="proom-box" data-aos="fade-up" data-aos-duration="1500">
                     <h1 class="section-title">Premium suite rooms</h1>
                     <p>The rooms are very premium and maintaining very hospitality and perfect for peaceful with added luxury.</p>
-                    <h2>$500</h2>
+                    <!-- <h2>$500</h2> -->
                     <button class="btn">Know more</button>
                 </div>
             </div>
@@ -248,7 +247,7 @@
 
     <!-- Footer section  -->
 
-    <section class="footer">
+    <section class="footer" id="footer">
         <div class="footer-data">
             <p class=section-title>SIDDU HOTELS</p>
             <p>Experience comfort, luxury, and <br>unforgettable moments with us.</p>
@@ -258,6 +257,9 @@
                 <i class="fa-brands fa-instagram"></i>
                 <i class="fa-brands fa-facebook"></i>
             </div>
+            <p>Any Queries or Room Booking<p>
+            <p>Email:sidduhotels@gmail.com</p>
+            <p>Contact NO:9876543210</p>
         </div>
         <div class="info">
             <h2>Legal</h2>
@@ -270,6 +272,7 @@
     </section>
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="script.js"></script>
     <script>
         AOS.init();
     </script>
